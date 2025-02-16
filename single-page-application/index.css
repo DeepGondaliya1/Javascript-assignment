@@ -5,15 +5,16 @@
 }
 
 body {
-  background-color: rgb(237, 240, 245);
+  background-color: rgb(227, 229, 232);
+  /* background-image: url('https://img.freepik.com/free-photo/abstract-white-gray-grunge-texture-pattern-background_84443-3254.jpg?t=st=1739714347~exp=1739717947~hmac=3d23502dfc5148f80c660eba1ba102ffe0399850c40d2f2e850788d1458e0c34&w=826'); */
 }
 
 .main-size {
-  font-size: 32px;
+  font-size: 50px;
 }
 
 .sub-size {
-  font-size: 20px;
+  font-size: 32px;
 }
 
 .container {
@@ -29,7 +30,7 @@ body {
   text-align: center;
   justify-content: center;
   padding: 15px 0px;
-  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 .nav-link {
@@ -43,47 +44,80 @@ body {
 
 /* home page */
 .home-page {
-  padding: 100px 0px 0px;
-  height: 500px;
+  height: 650px;
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: cover;
+  position: relative;
+  top: 45px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
 }
 
 .Slider {
   display: flex;
-  justify-content: space-between;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .home-content {
   text-align: center;
+  color: white;
+  font-weight: 900;
 }
 
 /* About page */
 
 .about-page {
-  height: 500px;
+  height: 650px;
+  position: relative;
+  background-color: white;
+  top: 55px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+  background-image: url('https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?t=st=1739714523~exp=1739718123~hmac=fadfd148bca3c2c953431a849c45072d2321db97adb944fa24c44e73127380c6&w=1380');
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .about-content {
   text-align: center;
+  font-weight: 900;
 }
 
 /* Service page */
 
 .services-page {
-  height: 500px;
+  height: 650px;
+  position: relative;
+  background-color: white;
+  top: 65px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.7);
+  background-image: url('https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?t=st=1739714523~exp=1739718123~hmac=fadfd148bca3c2c953431a849c45072d2321db97adb944fa24c44e73127380c6&w=1380');
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .services-content {
   text-align: center;
+  font-weight: 900;
 }
 
 /* Contact page */
 
 .contact-page {
-  height: 500px;
+  height: 650px;
+  position: relative;
+  background-color: white;
+  top: 75px;
+  display: flex;
+  background-image: url('https://img.freepik.com/free-photo/hand-painted-watercolor-background-with-sky-clouds-shape_24972-1095.jpg?t=st=1739714523~exp=1739718123~hmac=fadfd148bca3c2c953431a849c45072d2321db97adb944fa24c44e73127380c6&w=1380');
+  justify-content: center;
+  align-items: center;
 }
 
 .contact-content {
   text-align: center;
+  font-weight: 900;
 }

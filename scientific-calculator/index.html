@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Scientific_Calculator</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body class="main-container">
     <div class="container">
         <div class="display">
@@ -14,64 +17,91 @@
             <div class="display-small-left">0</div>
         </div>
         <div class="button-style">
-            <button class="row font-bold">DEG</button>
-            <button class="row font-bold">F-E</button>
+            <button class="row font-bold" id="select-btn">DEG</button>
+            <button class="row font-bold" id="select-btn">F-E</button>
         </div>
         <div class="button-style">
-            <button class="row">MC</button>
-            <button class="row">MR</button>
-            <button class="row font-bold">M+</button>
-            <button class="row font-bold">M-</button>
-            <button class="row font-bold">MS</button>
+            <button class="row" id="select-btn">MC</button>
+            <button class="row" id="select-btn">MR</button>
+            <button class="row font-bold" id="select-btn">M+</button>
+            <button class="row font-bold" id="select-btn">M-</button>
+            <button class="row font-bold" id="select-btn">MS</button>
         </div>
         <div class="button-style">
-            <button class="row">2<sup>nd</sup></button>
-            <button class="row">pie</button>
-            <button class="row">Trignomatry</button>
-            <button class="row">Function</button>
-            <button class="row">clear</button>
+            <button class="row" id="toggle-mode">2<sup>nd</sup></button>
+            <button class="row" id="select-btn">pie</button>
+            <div class="dropdown">
+                <button class="row math-function dropbtn">Trignomatry<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-btn">
+                    <div class="dropdown-grid-0">
+                        <button id="toggle-inverse">2<sup>nd</sup></button>
+                        <button id="select-btn" data-real="sin" data-inverse="sin<sup>-1</sup>">sin</button>
+                        <button id="select-btn" data-real="cos" data-inverse="cos<sup>-1</sup>">cos</button>
+                        <button id="select-btn" data-real="tan" data-inverse="tan<sup>-1</sup>">tan</button>
+                        <button id="select-btn">hyp</button>
+                        <button id="select-btn" data-real="cosec" data-inverse="cosec<sup>-1</sup>">cosec</button>
+                        <button id="select-btn"  data-real="sec" data-inverse="sec<sup>-1</sup>">sec</button>
+                        <button id="select-btn" data-real="cot" data-inverse="cot<sup>-1</sup>">cot</button>
+                    </div>
+                </div>
+            </div>
+            <div class="dropdown">
+                <button class="row math-function dropbtn">Function<i class="fa fa-caret-down"></i></button>
+                <div class="dropdown-btn">
+                    <div class="dropdown-grid-1">
+                        <button id="select-btn">|x|</button>
+                        <button id="select-btn">floor</button>
+                        <button id="select-btn">ceil</button>
+                        <button id="select-btn">rand</button>
+                        <button id="select-btn">dms</button>
+                        <button id="select-btn">deg</button>
+                    </div>
+                </div>
+            </div>
+            <button class="row" id="select-btn">clear</button>
         </div>
         <div class="button-style">
-            <button class="row">x<sup>2</sup></button>
-            <button class="row">1/x</button>
-            <button class="row">|x|</button>
-            <button class="row">exp</button>
-            <button class="row">%</button>
+            <button class="row" id="select-btn" data-primary = "x<sup>2</sup>" data-secondary = "x<sup>3</sup>">x<sup>2</sup></button>
+            <button class="row" id="select-btn">1/x</button>
+            <button class="row" id="select-btn">|x|</button>
+            <button class="row" id="select-btn">exp</button>
+            <button class="row" id="select-btn">%</button>
         </div>
         <div class="button-style">
-            <button class="row">2√x</button>
-            <button class="row">(</button>
-            <button class="row">)</button>
-            <button class="row">n!</button>
-            <button class="row">/</button>
+            <button class="row" id="select-btn" data-primary = "2√x" data-secondary = "3√x">2√x</button>
+            <button class="row" id="select-btn">(</button>
+            <button class="row" id="select-btn">)</button>
+            <button class="row" id="select-btn">n!</button>
+            <button class="row" id="select-btn">/</button>
         </div>
         <div class="button-style">
-            <button class="row">x<sup>y</sup></button>
-            <button class="row font-bold number-color">7</button>
-            <button class="row font-bold number-color">8</button>
-            <button class="row font-bold number-color">9</button>
-            <button class="row">*</button>
+            <button class="row" id="select-btn" data-primary = "x<sup>y</sup>" data-secondary = "y√x">x<sup>y</sup></button>
+            <button class="row font-bold number-color" id="select-btn">7</button>
+            <button class="row font-bold number-color" id="select-btn">8</button>
+            <button class="row font-bold number-color" id="select-btn">9</button>
+            <button class="row" id="select-btn">*</button>
         </div>
         <div class="button-style">
-            <button class="row">10<sup>x</sup></button>
-            <button class="row font-bold number-color">4</button>
-            <button class="row font-bold number-color">5</button>
-            <button class="row font-bold number-color">6</button>
-            <button class="row">-</button>
+            <button class="row" id="select-btn" data-primary = "10<sup>x</sup>" data-secondary = "2<sup>x</sup>">10<sup>x</sup></button>
+            <button class="row font-bold number-color" id="select-btn">4</button>
+            <button class="row font-bold number-color" id="select-btn">5</button>
+            <button class="row font-bold number-color" id="select-btn">6</button>
+            <button class="row" id="select-btn">-</button>
         </div>
         <div class="button-style">
-            <button class="row">log</button>
-            <button class="row font-bold number-color">1</button>
-            <button class="row font-bold number-color">2</button>
-            <button class="row font-bold number-color">3</button>
-            <button class="row">+</button>
+            <button class="row" id="select-btn" data-primary = "log" data-secondary = "log<sub>y</sub>x">log</button>
+            <button class="row font-bold number-color" id="select-btn">1</button>
+            <button class="row font-bold number-color" id="select-btn">2</button>
+            <button class="row font-bold number-color" id="select-btn">3</button>
+            <button class="row" id="select-btn">+</button>
         </div>
         <div class="button-style">
-            <button class="row">ln</button>
-            <button class="row">+/-</button>
-            <button class="row font-bold number-color">0</button>
-            <button class="row">.</button>
-            <button class="row result-color">=</button>
+            <button class="row" id="select-btn" data-primary = "ln" data-secondary = "e<sup>x</sup>">ln</button>
+            <button class="row" id="select-btn">+/-</button>
+            <button class="row font-bold number-color" id="select-btn">0</button>
+            <button class="row" id="select-btn">.</button>
+            <button class="row result-color" id="select-btn">=</button>
         </div>
+        <script src="index.js"></script>
 </body>
 </html>

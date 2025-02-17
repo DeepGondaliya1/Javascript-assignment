@@ -1,63 +1,114 @@
-.main-container{
-    background-color: #f3f4f6;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
+.main-container {
+  background-color: #f3f4f6;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
 }
 
-.container{
-    border-radius: 0.5rem; 
-    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
-    width: 100%;
-    max-width: 448px;
-    background-color: white;
-    padding: 4px;
+.container {
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  max-width: 448px;
+  background-color: white;
+  padding: 4px;
 }
 
-.display{
-    background-color: #e5e7eb;
-    text-align: right;
-    padding: 15px; 
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+.display {
+  background-color: #e5e7eb;
+  text-align: right;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 
-.display-small-left{
-    color: #6b7280;
-    text-align: left;
-}
-    
-.display-small-right{
-    color: #6b7280;
-}
-.display-big{
-    font-size: 32px;
-    line-height: 48px;
+.display-small-left {
+  color: #6b7280;
+  text-align: left;
 }
 
-.button-style{
-    display: grid; 
-    grid-template-columns: repeat(5, 1fr);
-    min-height: 55px;
+.display-small-right {
+  color: #6b7280;
+}
+.display-big {
+  font-size: 32px;
+  line-height: 48px;
 }
 
-.row{
-    background-color:#ebeef3;
-    padding: 0.5rem;
-    border: 1px solid #d6d9dd;
-    cursor: pointer;
+.button-style {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  min-height: 55px;
 }
 
-.result-color{
-    background-color: rgb(148, 182, 245);
+.row {
+  background-color: #ebeef3;
+  padding: 0.5rem;
+  border: 1px solid #d6d9dd;
+  cursor: pointer;
 }
 
-.font-bold{
-    font-weight: bolder;
-    font-size: 18px;
+.result-color {
+  background-color: rgb(148, 182, 245);
 }
 
-.number-color{
- background-color: white;
+.font-bold {
+  font-weight: bolder;
+  font-size: 18px;
+}
+
+.number-color {
+  background-color: white;
+}
+
+.math-function {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+/* dropdown button */
+
+.dropdown {
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 14px;
+  width: 100%;
+  height: 100%;
+}
+
+.dropdown-btn {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-btn button {
+  padding: 10px 15px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.dropdown:hover .dropdown-btn {
+  display: block;
+}
+
+.dropdown-grid-0 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.dropdown-grid-1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.row:hover {
+  background-color: #f9f9f9;
 }
